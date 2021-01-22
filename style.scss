@@ -494,5 +494,80 @@ nav{
             padding-bottom: 80px;
         }
     }
+
+    .business_icon_section{
+        color: #fff;
+        text-align: center;
+        .col-1-of-5{
+            width: calc(100% / 5);
+            margin-right: 0;
+            background-image: linear-gradient(to right bottom, #4e4376, #2a427e);
+            padding: 24px;
+            img{
+                height: 50px;
+            }
+            p{
+                text-transform: uppercase;
+                font-size: 13px;
+                line-height: 24px;
+                font-weight: 400;
+                margin-top: 20px;
+            }
+
+            &:hover{
+                background-image: linear-gradient(to right bottom, #ff0566, #fa7236);
+                transform: translatey(-3px);
+                transition: all 0.3s;
+            }
+        }
+    }
+    .business_service_section{
+        img{
+            width: 90%;
+        }
+        .business_server_desc{
+            padding-top: 80px;
+            color: #fff;
+            h2{
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 24px;
+                margin-bottom: 25px;
+            }
+            p{
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 24px;
+                color: rgba(255, 255, 255, 0.5);
+                margin-bottom: 25px;
+            }
+            ul{
+                li{
+                    margin-bottom: 15px;
+                    color: rgba(255, 255, 255, 0.5);
+                    i{
+                        margin-right: 12px;
+                        color: #60c79a;
+                    }
+                }
+            }
+            a{
+                font-size: 13px;
+                line-height: 18px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #fc3d4d;
+                border: 3px solid #fc3d4d;
+                padding: 15px 30px;
+                border-radius: 50px;
+                margin-top: 40px;
+                display: inline-block;
+                &:hover{
+                    background-color: #fc3d4d;
+                    color: #fff;
+                }
+            }
+        }
+    }
 }
     /* business section ends */
