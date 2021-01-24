@@ -1,5 +1,5 @@
 
-    /* header section starts */
+
 body{
     background-color: #061413;
 }
@@ -29,6 +29,7 @@ body{
     }
 }
 
+    /* header section starts */
 header{
     // background-color: #;
     padding-top: 40px;
@@ -88,11 +89,10 @@ nav{
     }
 
 }
-
     /* header section ends */
 
-    /* banner section starts */
 
+    /* banner section starts */
 .banner_section{
     padding: 120px 0;
     h1 {
@@ -158,8 +158,8 @@ nav{
         }
     }
 }
-
     /* banner section ends */
+
 
     /* price section starts */
 .price_section{
@@ -571,3 +571,301 @@ nav{
     }
 }
     /* business section ends */
+
+    
+    /* testimonial section starts */
+.testimonial_section{
+    background-color: #260e16;
+    .common_title{
+        h4{
+            padding-top: 80px;
+        }
+        p{
+            margin-bottom: 0;
+            padding-bottom: 80px;
+        }
+    }
+    .testmonials{
+        padding: 50px 0;
+        .single_testimonial{
+            background-color: #1d1019;
+            position: relative;
+            text-align: center;
+            border-radius: 8px;
+            opacity: 0.8;
+            .author_image{
+                width: 80px;
+                height: 80px;
+                position: absolute;
+                top: -40px;
+                left: 50%;
+                transform: translate(-50%);
+                img{
+                    width: 100%;
+                    border-radius: 50%;
+                }
+            }
+            p{
+                color: #4e6367;
+                font-style: italic;
+                padding: 80px 45px 45px 45px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+            }
+            h4{
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 22px;
+                color: #fc3d4d;
+                margin-bottom: 8px;
+            }
+            h5{
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 22px;
+                color: #fff;
+                padding-bottom: 45px;
+            }
+            &:hover{
+                background-color: #351f23;
+                opacity: 1;
+                transform: translateY(-5px);
+                transition: all 0.3s;
+                p{
+                    color: #fff;
+                }
+            }
+        }
+        .active{
+            background-color: #351f23;
+            opacity: 1;
+            transform: translateY(-5px);
+            transition: all 0.3s;
+            p{
+                color: #fff;
+            }
+        }
+    }
+    .dot_section{
+        text-align: center;
+        padding-bottom: 50px;
+        .dot{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #fff;
+            display: inline-block;
+            margin: 0 auto;
+            margin: 0 3px;
+            &:hover{
+                border: 2px solid #fc3d4d;
+                background: transparent;
+            }
+        }
+    }
+}
+    /* testimonial section ends */
+
+
+    /* team section starts */
+.team_section{
+    background-color: #230c0c;
+    padding-bottom: 50px;
+    .common_title{
+        h4{
+            padding-top: 80px;
+        }
+        p{
+            margin-bottom: 0;
+            padding-bottom: 80px;
+        }
+    }
+    .team{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .member{
+            background-color: #160808;
+            width: calc((100% - 90px) / 4);
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 40px;
+            border-radius: 8px;
+            position: relative;
+
+            &:not(:nth-child(4)){
+                margin-right: 30px;
+            }
+            .member_img{
+                width: 100px;
+                height: 100px;
+                margin: 0 auto;
+                margin-bottom: 25px;
+
+                img{
+                width: 100%;
+                border-radius: 50%;
+                }
+            }
+            .member_social_icon{
+                position: absolute;
+                top: 20px;
+                right: 20px;
+
+                i{
+                    color: #0b8dae;
+                    margin-left: 5px;
+                }
+            }
+            h4{
+                font-weight: 500;
+                color: #fff;
+                font-size: 16px;
+                line-height: 22px;
+                margin-bottom: 12px;
+            }
+            h5{
+                font-weight: 400;
+                color: rgba(255, 255, 255, 0.5);
+                font-size: 15px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+    /* team section ends */
+
+
+    /* faq section starts */
+.faq_section{
+    background-color: #1a0908;
+    padding-bottom: 50px;
+    .common_title{
+        h4{
+            padding-top: 80px;
+        }
+        p{
+            margin-bottom: 0;
+            padding-bottom: 80px;
+        }
+    }
+    .faq_btn{
+        text-align: center;
+        
+        a{
+            color: #fc3d4d;
+            border: 3px solid #fc3d4d;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            padding: 15px 30px;
+            border-radius: 30px;
+
+            &:hover{
+                color: #fff;
+                background-color: #fc3d4d;
+                transition: all 0.3s;
+            }
+        }
+    }
+    .all_faqs{
+        padding-top: 80px;
+        .pair{
+            max-width: 750px;
+            margin: 0 auto;
+            .single{
+                float: left;
+                margin-bottom: 25px;
+                width: 48%;
+                margin-right: 4%;
+
+                h3{
+                    color: #fff;
+                    font-weight: 500;
+                    line-height: 24px;
+                    font-size: 15px;
+                    margin-bottom: 10px;
+                }
+
+                p{
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 24px;
+                    color: #898383;
+                }
+
+                &:nth-child(2n + 2){
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+    /* faq section ends */
+
+
+    /* blog section starts */
+.blog_section{
+    background-color: #0f0505;
+    .common_title{
+        h4{
+            padding-top: 80px;
+        }
+        p{
+            margin-bottom: 0;
+            padding-bottom: 80px;
+        }
+    }
+    .single_blog{
+        position: relative;
+
+        img{
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        .blog_title{
+            position: absolute;
+            padding: 10px;
+            top: 0;
+            left: 0;
+            a{
+                font-size: 13px;
+                color: #fff;
+                line-height: 18px;
+                font-weight: 400;
+                background-color: #f9533b;
+                padding: 6px 10px;
+                border-radius: 2px;
+            }
+            .yellow{
+                background-color: #fda400;
+            }
+            .cyan{
+                background-color: #00a5bb;
+            }
+        }
+        .blog_info{
+            position: absolute;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), #000);
+            width: 100%;
+            height: 160px;
+            bottom: 0;
+            padding: 30px;
+            color: #fff;
+            font-size: 13px;
+
+            span{
+                color: #aab8bb;
+                font-size: 13px;
+            }
+            h2{
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 34px;
+            }
+        }
+    }
+}
+    /* blog section ends */
