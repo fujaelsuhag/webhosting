@@ -57,6 +57,7 @@ header{
                 bottom: 0;
                 left: 0;
                 opacity: 0;
+                transition: 0.3s;
             }
         }
     }
@@ -301,7 +302,7 @@ nav{
 
     /* price section ends */
 .plan_section{
-    background-color: #0d1024;
+    background-image: linear-gradient(to bottom, #061413, #0c1022);
     padding: 50px 0;
 
     .plan_title{
@@ -346,7 +347,7 @@ nav{
 
     /* service section starts */
 .service_section{
-    background-color: #120d2c;
+    background-image: linear-gradient(to bottom, #0c1022, #120d2d);
     padding: 50px 0;
 
     .single_service{
@@ -396,7 +397,7 @@ nav{
 
     /* server section starts */
 .server_section{
-    background-color: #150a2f;
+    background-image: linear-gradient(to bottom, #120d2d, #160a2f);
     padding-top: 50px;
 
     .server_content{
@@ -420,7 +421,7 @@ nav{
 
     /* feature section starts */
 .feature_section{
-    background-color: #160b31;
+    background-image: linear-gradient(to bottom, #160a2f, #230d23);
     color: #ffffff;
     padding: 50px 0;
 
@@ -484,7 +485,7 @@ nav{
 
     /* business section starts */
 .business_section{
-    background-color: #230d21;
+    background-image: linear-gradient(to bottom, #230d23, #260e17);
     .common_title{
         h4{
             padding-top: 80px;
@@ -503,6 +504,8 @@ nav{
             margin-right: 0;
             background-image: linear-gradient(to right bottom, #4e4376, #2a427e);
             padding: 24px;
+            position: relative;
+           z-index: 1;
             img{
                 height: 50px;
             }
@@ -513,12 +516,22 @@ nav{
                 font-weight: 400;
                 margin-top: 20px;
             }
-
-            &:hover{
+            span{
+                width: 100%;
+                height: 100%;
+                display: block;
+                transition: all 2s;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
                 background-image: linear-gradient(to right bottom, #ff0566, #fa7236);
-                transform: translatey(-3px);
-                transition: all 0.3s;
+                opacity: 0;
             }
+            &:hover span{
+                opacity: 1;
+            }
+            
         }
     }
     .business_service_section{
@@ -575,7 +588,7 @@ nav{
     
     /* testimonial section starts */
 .testimonial_section{
-    background-color: #260e16;
+    background-image: linear-gradient(to bottom, #260e17, #260e11);
     .common_title{
         h4{
             padding-top: 80px;
@@ -670,7 +683,7 @@ nav{
 
     /* team section starts */
 .team_section{
-    background-color: #230c0c;
+    background-image: linear-gradient(to bottom, #260e11, #210c0b);
     padding-bottom: 50px;
     .common_title{
         h4{
@@ -739,7 +752,7 @@ nav{
 
     /* faq section starts */
 .faq_section{
-    background-color: #1a0908;
+    background-image: linear-gradient(to bottom, #210c0b, #150807);
     padding-bottom: 50px;
     .common_title{
         h4{
@@ -807,7 +820,8 @@ nav{
 
     /* blog section starts */
 .blog_section{
-    background-color: #0f0505;
+    background-image: linear-gradient(to bottom, #150807, #0b0404);
+    padding-bottom: 50px;
     .common_title{
         h4{
             padding-top: 80px;
@@ -869,3 +883,207 @@ nav{
     }
 }
     /* blog section ends */
+
+
+    /* company section starts */
+.company_section{
+     background-image: linear-gradient(to bottom, #0b0404, #070303);
+     padding: 50px 0;
+     h3{
+         font-weight: 500;
+         color: #fff;
+         font-size: 16px;
+         line-height: 24px;
+         text-align: center;
+         text-transform: uppercase;
+     }
+     .all_companies{
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         margin-top: 50px;
+         .single_company{
+             width: calc((100% - 175px) / 6);
+             height: 50px;
+             background-color: #a2abb5;
+             margin-bottom: 40px;
+             border-radius: 3px;
+             &:not(:nth-child(6)),{
+                 margin-right: 35px;
+             }
+             &:last-child{
+                 margin-right: 0 ;
+             }
+         }
+     }
+}
+    /* company section ends */
+
+
+    /* product section ends */
+.product_section{
+    background-image: linear-gradient(to bottom, #070303, #030102);
+    padding: 50px 0;
+
+    h2{
+        font-weight: 300;
+        font-size: 34px;
+        line-height: 24px;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 60px;
+    }
+
+    .single_product{
+        background-image: linear-gradient(to right bottom, #ff0666, #fa7137);
+        padding: 22px 15px 15px;
+        text-align: center;
+        color: #fff;
+        border-radius: 4px;
+
+        h3{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 10px;
+        }
+
+        p{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 10px;
+        }
+
+        .prduct_image{
+            width: 100%;
+            text-align: center;
+            margin-left: -2px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .product_two{
+        background-image: linear-gradient(to right bottom, #ff7b02, #ffcb52);
+    }
+    .product_three{
+        background-image: linear-gradient(to right bottom, #5c27fe, #c165dd);
+    }
+    .product_four{
+        background-image: linear-gradient(to right bottom, #4a78d6, #5dc8dd);
+    }
+    .product_five{
+        background-image: linear-gradient(to right bottom, #0a93b0, #04d7d7);
+    }
+    .product_six{
+        background-image: linear-gradient(to right bottom, #29b2b8, #8dd885);
+    }
+}
+    /* product section ends */
+
+
+    /* footer top section ends */
+.footer_top{
+    background-image: linear-gradient(to bottom, #030102, #010001);
+    padding: 50px 0;
+    .all_footer{
+        .single_footer{
+            ul{
+                li{
+                    a{
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 34px;
+                        color: #9b9ca0;
+                    }
+                    &:first-child{
+                        margin-bottom: 15px;
+                        a{
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            color: #fff;
+                            font-size: 13px;
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
+            form{
+                input{
+                    font-size: 14px;
+                    color: #aeaeae;
+                    line-height: 28px;
+                    font-weight: 400;
+                    padding: 8px 20px;
+                    border-radius: 3px;
+                    border: none;
+                    width: 68%;
+                    margin-right: 2%;
+                    float: left;
+                }
+                button{
+                    color: #fff;
+                    background-color: #44b081;
+                    font-size: 13px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    text-transform: uppercase;
+                    padding: 10px 20px;
+                    border-radius: 3px;
+                    border: none;
+                    width: 30%;
+                    cursor: pointer;
+                }
+            }
+            h4{
+                color: #fff;
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 24px;
+                text-transform: uppercase;
+                margin-top: 50px;
+            }
+            .icons{
+                margin-top: 10px;
+                i{
+                    color: #9b9ca0;
+                    margin-right: 12px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+    /* footer top section ends */
+
+
+    /* footer bottom section starts */
+footer{
+    background-color: #121212;
+    padding: 50px 0;
+    .footer_bottom_content{
+        .col-1-of-3{
+            margin-bottom: 0;
+            p{
+                font-size: 13px;
+                color: #9b9ca0;
+                line-height: 53px;
+            }
+        }
+        .footer_img{
+            text-align: center;
+        }
+        .footer_mini_menu{
+            text-align: center;
+            a{
+                font-size: 13px;
+                color: #9b9ca0;
+                line-height: 53px;
+                margin-left: 25px;
+            }
+        }
+    }
+}
+    /* footer bottom section ends */
+  
